@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport"
+    content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>菜品与菜单信息</title>
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/style.min.css">
+  <link rel="stylesheet" href="css/swiper.min.css">
+  <link rel="stylesheet" href="css/animate.css">
+
+  <style type="text/css">
+    .menu-box .menu-item:hover img {
+      cursor: pointer;
+      position: relative;
+      z-index: 10;
+      transition: all 0.5s ease-in-out;
+      transform: scale(1.1)
+    }
+
+    .swiper-container-horizontal>.swiper-pagination-bullets {
+      bottom: 44px;
+    }
+
+    .swiper-pagination-bullet-active {
+      background: #7c0d10;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="menu-msg-wrapper">
+    <header class="header">
+      <div class="header-bg">
+        <div class="header-box">
+          <ul>
+            <li><img src="img/en.jpg" alt=""> ENGLISH</li>
+            <li><img src="img/ice.jpg" alt=""> &nbsp;ICELAND</li>
+            <li class="active"><img src="img/chinese.jpg" alt=""> 中 文</li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <nav class="nav">
+      <div class="nav-box">
+        <div class="nav-box2">
+          <ul class="main">
+            <li>
+              <a href="index.html">网站首页</a>
+            </li>
+            <li><a href="branchInformation.html">分店信息</a></li>
+
+            <li>
+              <a href="commodityMenuInfo.html">菜品与菜单信息</a>
+              <ul class="drop menu2">
+                <li><a href="commodityMenuInfo.html">菜品展示</a></li>
+                <li><a href="menu.html">菜单信息</a></li>
+                <li><img src="img/dhdb.png"></li>
+              </ul>
+            </li>
+            <li><a href="groupMeal.html">团餐及宴会餐</a>
+              <ul class="drop menu2">
+                <li><a href="groupMeal.html">团餐及宴会菜品</a></li>
+                <li><a href="groupMenu.html">团餐及宴会菜单</a></li>
+                <li><img src="img/dhdb.png"></li>
+              </ul>
+            </li>
+            <li><a href="aboutUs.html">关于我们</a>
+            </li>
+            <li><a href="qdBeer.html">青岛啤酒</a>
+            </li>
+            <li><a href="takeOutFood.html">外卖预定</a>
+              <ul class="drop menu3">
+                <li><a href="takeOutFood.html">外卖菜品</a></li>
+                <li><a href="takeOutFoodMenu.html">外卖菜单</a></li>
+                <li><a href="onlineBooking.html">在线预订</a></li>
+                <li><img src="img/dhdb.png"></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <img src="img/navBottom.png" alt="">
+    </nav>
+    <section class="section">
+      <div class="section-cbg">
+        <!-- 轮播图 -->
+        <div class="swiper-container">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img src="img/cbanner1.jpg" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="img/cbanner2.jpg" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="img/cbanner3.jpg" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="img/cbanner4.jpg" alt="" />
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+
+      <!-- 菜品列表 -->
+      <div class="menu-box">
+        <div class="menu-item-box active">
+          <div class="menu-item">
+            <img src="img/clist1.jpg" alt="">
+            <p>菜名 $price</p>
+          </div>
+          <div class="menu-item">
+            <img src="img/clist2.jpg" alt="">
+            <p>麻婆豆腐 $36</p>
+          </div>
+          <div class="menu-item">
+            <img src="img/clist3.jpg" alt="">
+            <p>菜名 $price</p>
+          </div>
+          <div class="menu-item">
+            <img src="img/clist4.jpg" alt="">
+            <p>菜名 $price</p>
+          </div>
+        </div>
+
+        <div class="menu-item-box">
+          <div class="menu-item">
+            <img src="img/clist1.jpg" alt="">
+            <p>菜名 $price</p>
+          </div>
+          <div class="menu-item">
+            <img src="img/clist2.jpg" alt="">
+            <p>麻婆豆腐 $36</p>
+          </div>
+          <div class="menu-item">
+            <img src="img/clist3.jpg" alt="">
+            <p>菜名 $price</p>
+          </div>
+          <div class="menu-item">
+            <img src="img/clist4.jpg" alt="">
+            <p>菜名 $price</p>
+          </div>
+        </div>
+
+        <div class="menu-item-box">
+          <div class="menu-item">
+            <img src="img/clist1.jpg" alt="">
+            <p>菜名 $price</p>
+          </div>
+          <div class="menu-item">
+            <img src="img/clist2.jpg" alt="">
+            <p>麻婆豆腐 $36</p>
+          </div>
+          <div class="menu-item">
+            <img src="img/clist3.jpg" alt="">
+            <p>菜名 $price</p>
+          </div>
+          <div class="menu-item">
+            <img src="img/clist4.jpg" alt="">
+            <p>菜名 $price</p>
+          </div>
+        </div>
+      </div>
+      <!-- 分页 -->
+      <div class="paging large">
+        <div class="pagination">
+          <ul>
+            <li> <a href="javascript:void(0)"></a> </li>
+            <li class="active"><a href="javascript:void(0)"></a> </li>
+            <li> <a href="javascript:void(0)"></a> </li>
+            <li> <a href="javascript:void(0)"></a> </li>
+            <li> <a href="javascript:void(0)"></a> </li>
+            <li> <a href="javascript:void(0)"></a> </li>
+            <li> <a href="javascript:void(0)"></a> </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <footer class="footer">
+      <img src="img/navBottom.png" alt="">
+      <div class="footer-bg">
+        <p>Copyright ©2018 shanghaijiudian. All rights reserved.</p>
+        <p>E-mail: sjanghae@sjanghae.is</p>
+      </div>
+    </footer>
+  </div>
+
+  <script src="js/jquery.min.js"></script>
+  <script src="js/swiper.min.js"></script>
+  <script src="js/common.js"></script>
+  <script src="js/groupMeal.js"></script>
+</body>
+
+</html>

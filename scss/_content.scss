@@ -1,0 +1,559 @@
+// 分页
+.paging {
+  width: 343px;
+  margin: 50px auto;
+
+  .pagination ul {
+    display: inline;
+    padding-left: 0px;
+
+    li {
+      display: inline;
+      padding-left: 0px;
+      counter-increment: pagination;
+
+      &:hover a {
+        color: $color;
+        background-color: $pagColor;
+      }
+
+      &.active a {
+        color: $color;
+        background-color: $pagColor;
+      }
+
+      &:first-child a:after {
+        content: "<";
+      }
+
+      &:nth-child(2) {
+        counter-reset: pagination;
+      }
+
+      &:last-child a:after {
+        content: ">";
+      }
+
+      a {
+        border: solid 1px rgb(207, 207, 207);
+        border-radius: 5px;
+        color: #999;
+        text-decoration: none;
+        text-transform: uppercase;
+        display: inline-block;
+        text-align: center;
+        padding: 0.6rem 0.9rem;
+        background-color: $color;
+
+        &:after {
+          content: " "counter(pagination) " ";
+        }
+
+        &:first-child a:after {
+          content: "<";
+        }
+
+        &:last-child a:after {
+          content: ">";
+        }
+      }
+    }
+  }
+}
+
+// 首页
+.section {
+  position: relative;
+  top: -10px;
+
+  .swiper-container {
+    img {
+      width: 100%;
+    }
+  }
+}
+
+
+
+// 分店
+.branchInfo-wrapper {
+  .section {
+    img {
+      width: 100%;
+    }
+
+    .section-box {
+      width: 1200px;
+      text-align: center;
+      margin: 0 auto;
+
+      img {
+        width: 100%;
+      }
+
+      .section-title {
+        font-size: $fontSize48;
+        color: $bigTitle;
+        line-height: 1.25;
+        text-align: left;
+        margin: 45px 0;
+      }
+
+      .section-item {
+        width: 569px;
+        float: left;
+        margin-bottom: 45px;
+        overflow: hidden;
+
+        &:hover img {
+          cursor: pointer;
+          position: relative;
+          z-index: 10;
+          transition: all 0.5s ease-in-out;
+          transform: scale(1.1)
+        }
+
+        &:nth-child(2n+1) {
+          margin-right: 60px;
+        }
+
+        .section-info {
+          height: 210px;
+          text-align: left;
+          padding: 25px 38px 0 40px;
+          // &:nth-child(2n) {
+          background: -webkit-linear-gradient(right, rgb(228, 228, 228) 0%, rgb(228, 228, 228) 41%, rgb(242, 242, 242) 59%, rgb(255, 255, 255) 100%);
+          background: -o-linear-gradient(right, rgb(228, 228, 228) 0%, rgb(228, 228, 228) 41%, rgb(242, 242, 242) 59%, rgb(255, 255, 255) 100%);
+          background: -moz-linear-gradient(right, rgb(228, 228, 228) 0%, rgb(228, 228, 228) 41%, rgb(242, 242, 242) 59%, rgb(255, 255, 255) 100%);
+          background: linear-gradient(right, rgb(228, 228, 228) 0%, rgb(228, 228, 228) 41%, rgb(242, 242, 242) 59%, rgb(255, 255, 255) 100%);
+
+          // }
+
+          .section-info-title {
+            color: $brInColor;
+            font-size: $fontSize24;
+            text-transform: uppercase;
+            margin-bottom: 10px;
+          }
+
+          p {
+            line-height: 22px;
+
+            i {
+              margin-left: 105px;
+            }
+
+            &.marLf {
+              margin-left: 68px;
+            }
+          }
+
+          a {
+            font-size: $fontSize18;
+            color: $brInColor;
+            float: right;
+            margin-top: 18px;
+          }
+        }
+      }
+    }
+  }
+}
+
+// 分店详情
+.branchInfoDetail-wrapper {
+  .section {
+    width: 100%;
+    min-height: 1200px;
+    background: url('../img/fdxqBg.png') no-repeat;
+    background-size: cover;
+
+    .section-box {
+      width: 62.5%;
+      text-align: center;
+      margin: auto;
+      padding-bottom: 80px;
+      box-sizing: border-box;
+
+      .section-desc {
+        text-align: center;
+        padding: 450px 0 60px 0;
+
+        .desc-title {
+          font-size: 45px;
+          color: rgb(214, 52, 52);
+          text-transform: uppercase;
+        }
+
+        p {
+          font-size: 8px;
+          line-height: 20px;
+          color: rgb(51, 51, 51);
+        }
+      }
+
+      .section-pic {
+        overflow: hidden;
+
+        img {
+          width: 100%;
+          margin-bottom: 25px;
+        }
+
+        .fdxq-small {
+          width: 100%;
+          overflow: hidden;
+
+          img {
+            width: 48.5%;
+
+            &:first-child {
+              float: left;
+            }
+
+            &:nth-child(2) {
+              float: right;
+            }
+          }
+
+        }
+      }
+    }
+  }
+}
+
+
+// 商品与菜单信息
+.menu-msg-wrapper {
+  .section {
+    .section-cbg {
+      width: 100%;
+      height: 600px;
+      background: url(../img/cmenuBg_02.png) no-repeat;
+      background-size: cover;
+      position: relative;
+      text-align: center;
+
+      img {
+        width: 262px;
+        height: 460px;
+        margin-top: 40px;
+        border-radius: 20px;
+      }
+
+      .swiper-container {
+        width: 1132px;
+        height: 600px;
+      }
+
+    }
+
+    .menu-box {
+      width: 1200px;
+      text-align: center;
+      margin: 45px auto 0;
+      overflow: hidden;
+
+      .menu-item-box {
+        display: none;
+        &.active{
+          display: block;
+        }
+        .menu-item {
+          float: left;
+          width: 600px;
+          height: 463px;
+          margin: auto;
+          text-align: center;
+          position: relative;
+          overflow: hidden;
+
+          img {
+            width: 100%;
+            height: 100%;
+            position: relative;
+            z-index: -1;
+
+            &:hover {
+              cursor: pointer;
+              position: relative;
+              z-index: 10;
+              transition: all 0.5s ease-in-out;
+              transform: scale(1.2)
+            }
+          }
+
+          p {
+            width: 295px;
+            height: 93px;
+            line-height: 93px;
+            position: absolute;
+            z-index: 100;
+            font-size: $fontSize30;
+            color: $color;
+            top: 50%;
+            left: 50%;
+            margin-top: -46.5px;
+            margin-left: -147.5px;
+            text-align: center;
+            background-color: rgba($color: #3a1e0c, $alpha: .6);
+          }
+        }
+      }
+
+
+    }
+
+
+  }
+}
+
+// 关于我们
+#aboutSection {
+  .section-text {
+    p {
+      text-align: left;
+      text-indent: 48px;
+      line-height: 23px;
+      font-size: $fontSize16;
+    }
+
+    div {
+      margin-top: 42px;
+      font-size: $fontSize20;
+
+      p {
+        display: block;
+      }
+    }
+
+    .aboutImg {
+      width: 546px;
+      height: 315px;
+      position: absolute;
+      right: 52px;
+      bottom: 98px;
+    }
+  }
+}
+
+// 青岛啤酒
+.section {
+  .section-video {
+    width: 1200px;
+    margin: auto;
+
+    .section-qt {
+      width: 1083px;
+      padding: 45px 0;
+      margin: 0 auto;
+      padding-right: 12px;
+    }
+  }
+
+  .section-bottom {
+    background-color: $color;
+    text-align: center;
+    padding-bottom: 55px;
+
+    div {
+      width: 1200px;
+      margin: auto;
+
+      .title {
+        text-align: left;
+
+        img {
+          width: 768px;
+          margin: 45px 0 25px 0;
+        }
+      }
+
+      .desc {
+        color: #2b1210;
+        font-size: $fontSize16;
+        line-height: 28px;
+        padding-bottom: 26px;
+        text-align: left;
+      }
+
+      .section-imgs {
+        overflow: hidden;
+        padding-bottom: 25px;
+
+        img {
+          width: 600px;
+          height: 400px;
+          float: left;
+        }
+      }
+    }
+
+  }
+}
+
+// 外卖预订
+#takeOutFood {
+  .section {
+    width: 100%;
+    height: 1025px;
+    background: url('../img/yd.jpg') no-repeat;
+    overflow: hidden;
+
+    .paging {
+      position: relative;
+      top: 50px;
+    }
+
+    .section-menu-list {
+      width: 1200px;
+      margin: auto;
+      padding-top: 33px;
+
+      .section-menu-top {
+        width: 100%;
+        height: 50px;
+        line-height: 50px;
+        font-size: 18px;
+        padding: 0 20px;
+        background-color: #fff;
+        color: rgb(51, 51, 51);
+
+        a {
+          float: right;
+          color: rgb(124, 13, 16);
+        }
+      }
+
+      li {
+        display: inline-block;
+        float: left;
+        width: 300px;
+        height: 200px;
+        position: relative;
+
+        &:hover {
+          cursor: pointer;
+          position: relative;
+          z-index: 10;
+          transition: all 0.5s ease-in-out;
+          transform: scale(1.1);
+        }
+
+        p {
+          width: 148px;
+          height: 47px;
+          line-height: 47px;
+          color: #fff;
+          font-size: 16px;
+          text-align: center;
+          background-color: rgba(58, 30, 12, .6);
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          margin-left: -74px;
+          margin-top: -23.5px;
+        }
+      }
+    }
+  }
+}
+
+
+// 在线预订
+#online {
+  .section {
+    width: 100%;
+    max-height: 732px;
+    background: url('../img/yd2.jpg') no-repeat;
+    background-size: 100%;
+
+    .section-box {
+      width: 1200px;
+      margin: auto;
+      overflow: hidden;
+
+      //    padding-top: 52px;
+      .section-item-left {
+        float: left;
+      }
+
+      .section-item-center {
+        display: inline-grid;
+        justify-items: center;
+        float: left;
+        padding-top: 100px;
+
+        img {
+          &:nth-child(2) {
+            margin: 50px 53px 26px 43px;
+          }
+        }
+      }
+
+      .section-item-right {
+        float: left;
+        padding-top: 100px;
+        text-align: center;
+        margin-left: 30px;
+
+        form {
+          margin-top: 80px;
+          text-align: right;
+
+          div {
+            font-size: $fontSize24;
+            color: rgb(98, 55, 0);
+            text-align: center;
+            margin-bottom: 32px;
+
+            span {
+              i {
+                color: #e60012;
+                margin-left: -12px;
+              }
+            }
+
+
+            input,
+            textarea {
+              width: 300px;
+              height: 24px;
+              background-color: rgba(241, 241, 241, 0.702);
+              border-radius: 5px;
+              border: none;
+              padding-left: 8px;
+              border: 1px solid rgb(191, 191, 191);
+              text-align: left;
+              outline: none;
+            }
+
+            textarea {
+              height: 120px;
+              padding: 8px;
+            }
+
+          }
+
+        }
+      }
+    }
+  }
+}
+
+
+// 菜单
+.menu-wrapper {
+  .bg {
+    width: 100%;
+  }
+
+  .section-box {
+    margin: auto;
+    text-align: center;
+
+    img {
+      margin-top: 46px;
+    }
+  }
+}

@@ -1,0 +1,125 @@
+.header {
+    .header-bg {
+        width: 100%;
+        height: 65px;
+        background: url(../img/topBg.png) no-repeat 100%;
+
+        .header-box {
+            width: 1200px;
+            height: 100%;
+            text-align: center;
+            margin: auto;
+            overflow: hidden;
+
+            ul {
+                position: relative;
+                top: 18px;
+                float: right;
+                right: 0;
+                z-index: 100;
+
+                li {
+                    display: inline-block;
+                    font-size: $fontSize14;
+                    color: $color;
+                    margin-right: 30px;
+
+                    &.active {
+                        color: #e72d2c;
+                    }
+                }
+            }
+        }
+
+    }
+}
+
+.nav {
+    img{
+        width:100%;
+    }
+    .nav-box {
+        position: relative;
+        margin: 0 auto;
+        width: 100%;
+        z-index: 999;
+        
+
+        .nav-box2 {
+            height: 42px;
+            background-color: $navColor;
+
+            .main {
+                display: flex;
+                justify-content: center;
+            }
+
+            a {
+                color: #f9db9b;
+                display: block;
+                padding: 10px 15px;
+                font-size: $fontSize16;
+                font-family: "Raleway", sans-serif;
+            }
+        }
+
+        ul {
+            height: 53px;
+            margin: 0 auto;
+            font-size: 14px;
+
+            li {
+                width: 190px;
+                text-align: center;
+
+                .drop li {
+                    opacity: 0;
+                    transform-origin: top center;
+
+                    img {
+                        width: 135px;
+                    }
+
+                    a {
+                        background-color: $navColor;
+                        padding: 15px 0;
+                        font-size: 14px;
+                        border-bottom: 1px solid #5a080a;
+                        width: 135px;
+                        margin: 0 auto;
+
+                        &:hover {
+                            background-color: $navColor;
+                            padding: 10px 0;
+                            font-size: 16px;
+                        }
+                    }
+
+                }
+            }
+        }
+    }
+
+    /*------------- menu animation -------------------*/
+    .main li:hover .drop li {
+        animation: menu 0.3s ease-in-out forwards;
+        /*animation-delay: .3s;*/
+    }
+
+    @keyframes menu {
+        0% {
+            opacity: 0;
+            transform: scale(0.7);
+        }
+
+        50% {
+            opacity: 0.5;
+            transform: scale(1.1);
+        }
+
+        100% {
+            opacity: 1;
+            transform: scale(1);
+        }
+    }
+}
