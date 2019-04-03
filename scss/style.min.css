@@ -1,0 +1,657 @@
+.header .header-bg {
+  width: 100%;
+  height: 65px;
+  background: url(../img/topBg.png) no-repeat 100%
+}
+
+.header .header-bg .header-box {
+  width: 1200px;
+  height: 100%;
+  text-align: center;
+  margin: auto;
+  overflow: hidden
+}
+
+.header .header-bg .header-box ul {
+  position: relative;
+  top: 18px;
+  float: right;
+  right: 0;
+  z-index: 100
+}
+
+.header .header-bg .header-box ul li {
+  display: inline-block;
+  font-size: 14px;
+  color: #fff;
+  margin-right: 30px
+}
+
+.header .header-bg .header-box ul li.active {
+  color: #e72d2c
+}
+
+.nav img {
+  width: 100%
+}
+
+.nav .nav-box {
+  position: relative;
+  margin: 0 auto;
+  width: 100%;
+  z-index: 999
+}
+
+.nav .nav-box .nav-box2 {
+  height: 42px;
+  background-color: #7c0d10
+}
+
+.nav .nav-box .nav-box2 .main {
+  display: flex;
+  justify-content: center
+}
+
+.nav .nav-box .nav-box2 a {
+  color: #f9db9b;
+  display: block;
+  padding: 10px 15px;
+  font-size: 16px;
+  font-family: "Raleway", sans-serif
+}
+
+.nav .nav-box ul {
+  height: 53px;
+  margin: 0 auto;
+  font-size: 14px
+}
+
+.nav .nav-box ul li {
+  width: 190px;
+  text-align: center
+}
+
+.nav .nav-box ul li .drop li {
+  opacity: 0;
+  transform-origin: top center
+}
+
+.nav .nav-box ul li .drop li img {
+  width: 135px
+}
+
+.nav .nav-box ul li .drop li a {
+  background-color: #7c0d10;
+  padding: 15px 0;
+  font-size: 14px;
+  border-bottom: 1px solid #5a080a;
+  width: 135px;
+  margin: 0 auto
+}
+
+.nav .nav-box ul li .drop li a:hover {
+  background-color: #7c0d10;
+  padding: 10px 0;
+  font-size: 16px
+}
+
+.nav .main li:hover .drop li {
+  animation: menu 0.3s ease-in-out forwards
+}
+
+@keyframes menu {
+  0% {
+    opacity: 0;
+    transform: scale(0.7)
+  }
+
+  50% {
+    opacity: 0.5;
+    transform: scale(1.1)
+  }
+
+  100% {
+    opacity: 1;
+    transform: scale(1)
+  }
+}
+
+.footer {
+  height: 95px
+}
+
+.footer .footer-bg {
+  width: 1005;
+  height: 76px;
+  background: url(../img/footerBg.png) no-repeat 100%;
+  position: relative;
+  top: -20px;
+  z-index: 1;
+  text-align: center
+}
+
+.footer .footer-bg p {
+  color: #fff;
+  font-size: 12px;
+  text-transform: uppercase;
+  line-height: 1.833
+}
+
+.footer .footer-bg p:first-child {
+  padding-top: 18px
+}
+
+.footer img {
+  width: 100%;
+  height: 39px;
+  position: relative;
+  top: -10px;
+  z-index: 100
+}
+
+.paging {
+  width: 343px;
+  margin: 50px auto
+}
+
+.paging .pagination ul {
+  display: inline;
+  padding-left: 0px
+}
+
+.paging .pagination ul li {
+  display: inline;
+  padding-left: 0px;
+  counter-increment: pagination
+}
+
+.paging .pagination ul li:hover a {
+  color: #fff;
+  background-color: #93221d
+}
+
+.paging .pagination ul li.active a {
+  color: #fff;
+  background-color: #93221d
+}
+
+.paging .pagination ul li:first-child a:after {
+  content: "<"
+}
+
+.paging .pagination ul li:nth-child(2) {
+  counter-reset: pagination
+}
+
+.paging .pagination ul li:last-child a:after {
+  content: ">"
+}
+
+.paging .pagination ul li a {
+  border: solid 1px #cfcfcf;
+  border-radius: 5px;
+  color: #999;
+  text-decoration: none;
+  text-transform: uppercase;
+  display: inline-block;
+  text-align: center;
+  padding: 0.6rem 0.9rem;
+  background-color: #fff
+}
+
+.paging .pagination ul li a:after {
+  content: " "counter(pagination) " "
+}
+
+.paging .pagination ul li a:first-child a:after {
+  content: "<"
+}
+
+.paging .pagination ul li a:last-child a:after {
+  content: ">"
+}
+
+.section {
+  position: relative;
+  top: -10px
+}
+
+.section .swiper-container img {
+  width: 100%
+}
+
+.branchInfo-wrapper .section img {
+  width: 100%
+}
+
+.branchInfo-wrapper .section .section-box {
+  width: 1200px;
+  text-align: center;
+  margin: 0 auto
+}
+
+.branchInfo-wrapper .section .section-box img {
+  width: 100%
+}
+
+.branchInfo-wrapper .section .section-box .section-title {
+  font-size: 48px;
+  color: #cd9c5e;
+  line-height: 1.25;
+  text-align: left;
+  margin: 45px 0
+}
+
+.branchInfo-wrapper .section .section-box .section-item {
+  width: 569px;
+  float: left;
+  margin-bottom: 45px;
+  overflow: hidden
+}
+
+.branchInfo-wrapper .section .section-box .section-item:hover img {
+  cursor: pointer;
+  position: relative;
+  z-index: 10;
+  transition: all 0.5s ease-in-out;
+  transform: scale(1.1)
+}
+
+.branchInfo-wrapper .section .section-box .section-item:nth-child(2n+1) {
+  margin-right: 60px
+}
+
+.branchInfo-wrapper .section .section-box .section-item .section-info {
+  height: 210px;
+  text-align: left;
+  padding: 25px 38px 0 40px;
+  background: -webkit-linear-gradient(right, #e4e4e4 0%, #e4e4e4 41%, #f2f2f2 59%, #fff 100%);
+  background: -o-linear-gradient(right, #e4e4e4 0%, #e4e4e4 41%, #f2f2f2 59%, #fff 100%);
+  background: -moz-linear-gradient(right, #e4e4e4 0%, #e4e4e4 41%, #f2f2f2 59%, #fff 100%);
+  background: linear-gradient(right, #e4e4e4 0%, #e4e4e4 41%, #f2f2f2 59%, #fff 100%)
+}
+
+.branchInfo-wrapper .section .section-box .section-item .section-info .section-info-title {
+  color: #c22e49;
+  font-size: 24px;
+  text-transform: uppercase;
+  margin-bottom: 10px
+}
+
+.branchInfo-wrapper .section .section-box .section-item .section-info p {
+  line-height: 22px
+}
+
+.branchInfo-wrapper .section .section-box .section-item .section-info p i {
+  margin-left: 105px
+}
+
+.branchInfo-wrapper .section .section-box .section-item .section-info p.marLf {
+  margin-left: 68px
+}
+
+.branchInfo-wrapper .section .section-box .section-item .section-info a {
+  font-size: 18px;
+  color: #c22e49;
+  float: right;
+  margin-top: 18px
+}
+
+.branchInfoDetail-wrapper .section {
+  width: 100%;
+  min-height: 1200px;
+  background: url("../img/fdxqBg.png") no-repeat;
+  background-size: cover
+}
+
+.branchInfoDetail-wrapper .section .section-box {
+  width: 62.5%;
+  text-align: center;
+  margin: auto;
+  padding-bottom: 80px;
+  box-sizing: border-box
+}
+
+.branchInfoDetail-wrapper .section .section-box .section-desc {
+  text-align: center;
+  padding: 450px 0 60px 0
+}
+
+.branchInfoDetail-wrapper .section .section-box .section-desc .desc-title {
+  font-size: 45px;
+  color: #d63434;
+  text-transform: uppercase
+}
+
+.branchInfoDetail-wrapper .section .section-box .section-desc p {
+  font-size: 8px;
+  line-height: 20px;
+  color: #333
+}
+
+.branchInfoDetail-wrapper .section .section-box .section-pic {
+  overflow: hidden
+}
+
+.branchInfoDetail-wrapper .section .section-box .section-pic img {
+  width: 100%;
+  margin-bottom: 25px
+}
+
+.branchInfoDetail-wrapper .section .section-box .section-pic .fdxq-small {
+  width: 100%;
+  overflow: hidden
+}
+
+.branchInfoDetail-wrapper .section .section-box .section-pic .fdxq-small img {
+  width: 48.5%
+}
+
+.branchInfoDetail-wrapper .section .section-box .section-pic .fdxq-small img:first-child {
+  float: left
+}
+
+.branchInfoDetail-wrapper .section .section-box .section-pic .fdxq-small img:nth-child(2) {
+  float: right
+}
+
+.menu-msg-wrapper .section .section-cbg {
+  width: 100%;
+  height: 600px;
+  background: url(../img/cmenuBg_02.png) no-repeat;
+  background-size: cover;
+  position: relative;
+  text-align: center
+}
+
+.menu-msg-wrapper .section .section-cbg img {
+  width: 262px;
+  height: 460px;
+  margin-top: 40px;
+  border-radius: 20px
+}
+
+.menu-msg-wrapper .section .section-cbg .swiper-container {
+  width: 1152px;
+  height: 600px
+}
+
+
+
+.menu-msg-wrapper .section .menu-box {
+  width: 1200px;
+  text-align: center;
+  margin: 45px auto 0;
+  overflow: hidden
+}
+
+.menu-msg-wrapper .section .menu-box .menu-item-box {
+  display: none
+}
+
+.menu-msg-wrapper .section .menu-box .menu-item-box.active {
+  display: block
+}
+
+.menu-msg-wrapper .section .menu-box .menu-item-box .menu-item {
+  float: left;
+  width: 600px;
+  height: 463px;
+  margin: auto;
+  text-align: center;
+  position: relative;
+  overflow: hidden
+}
+
+.menu-msg-wrapper .section .menu-box .menu-item-box .menu-item img {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  z-index: -1
+}
+
+.menu-msg-wrapper .section .menu-box .menu-item-box .menu-item img:hover {
+  cursor: pointer;
+  position: relative;
+  z-index: 10;
+  transition: all 0.5s ease-in-out;
+  transform: scale(1.2)
+}
+
+.menu-msg-wrapper .section .menu-box .menu-item-box .menu-item p {
+  width: 295px;
+  height: 93px;
+  line-height: 93px;
+  position: absolute;
+  z-index: 100;
+  font-size: 30px;
+  color: #fff;
+  top: 50%;
+  left: 50%;
+  margin-top: -46.5px;
+  margin-left: -147.5px;
+  text-align: center;
+  background-color: rgba(58, 30, 12, 0.6)
+}
+
+#aboutSection .section-text p {
+  text-align: left;
+  text-indent: 48px;
+  line-height: 23px;
+  font-size: 16px
+}
+
+#aboutSection .section-text div {
+  margin-top: 42px;
+  font-size: 20px
+}
+
+#aboutSection .section-text div p {
+  display: block
+}
+
+#aboutSection .section-text .aboutImg {
+  width: 546px;
+  height: 315px;
+  position: absolute;
+  right: 52px;
+  bottom: 98px
+}
+
+.section .section-video {
+  width: 1200px;
+  margin: auto
+}
+
+.section .section-video .section-qt {
+  width: 1083px;
+  padding: 45px 0;
+  margin: 0 auto;
+  padding-right: 12px
+}
+
+.section .section-bottom {
+  background-color: #fff;
+  text-align: center;
+  padding-bottom: 55px
+}
+
+.section .section-bottom div {
+  width: 1200px;
+  margin: auto
+}
+
+.section .section-bottom div .title {
+  text-align: left
+}
+
+.section .section-bottom div .title img {
+  width: 768px;
+  margin: 45px 0 25px 0
+}
+
+.section .section-bottom div .desc {
+  color: #2b1210;
+  font-size: 16px;
+  line-height: 28px;
+  padding-bottom: 26px;
+  text-align: left
+}
+
+.section .section-bottom div .section-imgs {
+  overflow: hidden;
+  padding-bottom: 25px
+}
+
+.section .section-bottom div .section-imgs img {
+  width: 600px;
+  height: 400px;
+  float: left
+}
+
+#takeOutFood .section {
+  width: 100%;
+  height: 1025px;
+  background: url("../img/yd.jpg") no-repeat;
+  overflow: hidden
+}
+
+#takeOutFood .section .paging {
+  position: relative;
+  top: 50px
+}
+
+#takeOutFood .section .section-menu-list {
+  width: 1200px;
+  margin: auto;
+  padding-top: 33px
+}
+
+#takeOutFood .section .section-menu-list .section-menu-top {
+  width: 100%;
+  height: 50px;
+  line-height: 50px;
+  font-size: 18px;
+  padding: 0 20px;
+  background-color: #fff;
+  color: #333
+}
+
+#takeOutFood .section .section-menu-list .section-menu-top a {
+  float: right;
+  color: #7c0d10
+}
+
+#takeOutFood .section .section-menu-list li {
+  display: inline-block;
+  float: left;
+  width: 300px;
+  height: 200px;
+  position: relative
+}
+
+#takeOutFood .section .section-menu-list li:hover {
+  cursor: pointer;
+  position: relative;
+  z-index: 10;
+  transition: all 0.5s ease-in-out;
+  transform: scale(1.1)
+}
+
+#takeOutFood .section .section-menu-list li p {
+  width: 148px;
+  height: 47px;
+  line-height: 47px;
+  color: #fff;
+  font-size: 16px;
+  text-align: center;
+  background-color: rgba(58, 30, 12, 0.6);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-left: -74px;
+  margin-top: -23.5px
+}
+
+#online .section {
+  width: 100%;
+  max-height: 732px;
+  background: url("../img/yd2.jpg") no-repeat;
+  background-size: 100%
+}
+
+#online .section .section-box {
+  width: 1200px;
+  margin: auto;
+  overflow: hidden
+}
+
+#online .section .section-box .section-item-left {
+  float: left
+}
+
+#online .section .section-box .section-item-center {
+  display: inline-grid;
+  justify-items: center;
+  float: left;
+  padding-top: 100px
+}
+
+#online .section .section-box .section-item-center img:nth-child(2) {
+  margin: 50px 53px 26px 43px
+}
+
+#online .section .section-box .section-item-right {
+  float: left;
+  padding-top: 100px;
+  text-align: center;
+  margin-left: 30px
+}
+
+#online .section .section-box .section-item-right form {
+  margin-top: 80px;
+  text-align: right
+}
+
+#online .section .section-box .section-item-right form div {
+  font-size: 24px;
+  color: #623700;
+  text-align: center;
+  margin-bottom: 32px
+}
+
+#online .section .section-box .section-item-right form div span i {
+  color: #e60012;
+  margin-left: -12px
+}
+
+#online .section .section-box .section-item-right form div input,
+#online .section .section-box .section-item-right form div textarea {
+  width: 300px;
+  height: 24px;
+  background-color: rgba(241, 241, 241, 0.702);
+  border-radius: 5px;
+  border: none;
+  padding-left: 8px;
+  border: 1px solid #bfbfbf;
+  text-align: left;
+  outline: none
+}
+
+#online .section .section-box .section-item-right form div textarea {
+  height: 120px;
+  padding: 8px
+}
+
+.menu-wrapper .bg {
+  width: 100%
+}
+
+.menu-wrapper .section-box {
+  margin: auto;
+  text-align: center
+}
+
+.menu-wrapper .section-box img {
+  margin-top: 46px
+}
